@@ -1,15 +1,15 @@
 public class Computer {
 
-    private ResultView result_view;
-    private InputView input_view;
+    private InputView inputView;
+    private ResultView resultView;
 
     public Computer() {
-        result_view = new ResultView();
-        input_view = new InputView();
+        inputView = new InputView();
+        resultView = new ResultView();
     }
 
-    public void baseball_game() {
-        BaseballGame baseball_game = new BaseballGame(input_view, result_view);
-        baseball_game.run_game();
+    public void baseballGame() {
+        BaseballGame baseballGame = new BaseballGame(inputView, resultView);
+        baseballGame.runGame();
     }
 }

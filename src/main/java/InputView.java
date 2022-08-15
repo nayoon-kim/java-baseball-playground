@@ -9,12 +9,12 @@ public class InputView {
         scanner = new Scanner(System.in);
     }
 
-    public String get_input() {
+    public String getInput() {
         String input = scanner.nextLine();
         return input;
     }
 
-    public void input_guide() {
+    public void inputGuide() {
         System.out.print(INPUT_GUIDE);
     }
 }

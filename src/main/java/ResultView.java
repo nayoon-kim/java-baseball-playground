@@ -1,6 +1,6 @@
 public class ResultView {
 
-    public void show_result_fail(Result result) {
+    public void showResultFail(Result result) {
         String answer = "";
         if (result.getBall() > 0) {
             answer += result.getBall() + "볼 ";
@@ -14,15 +14,15 @@ public class ResultView {
         System.out.println(answer);
     }
 
-    public void show_result_success() {
-        print_result_success();
-        ask_new_game_start();
+    public void showResultSuccess() {
+        printResultSuccess();
+        askNewGameStart();
     }
     
-    public void print_result_success() {
+    public void printResultSuccess() {
         System.out.println("3개의 숫자를 모두 맞히셨습니다! 게임 종료");
     }
-    public void ask_new_game_start() {
+    public void askNewGameStart() {
         System.out.println("게임을 새로 시작하려면 1, 종료하려면 2를 입력하세요.");
     }
 }
