@@ -76,7 +76,7 @@ public class BaseballGame {
         String[] answerSplit = answer.split("");
         String[] inputSplit = input.split("");
         for(int i = 0, size = answerSplit.length; i < size; i++) {
-            if (answerSplit[i] == inputSplit[i]) {
+            if (answerSplit[i].equals(inputSplit[i])) {
                 strikeNum++;
             }
         }
@@ -90,7 +90,7 @@ public class BaseballGame {
         for(int i = 0, size = inputSplit.length; i < size; i++) {
             for(int j = 0; j < size; j++) {
                 if (i == j) continue;
-                if (answerSplit[i] == inputSplit[j]) {
+                if (answerSplit[i].equals(inputSplit[j])) {
                     ballNum++;
                 }
             }
